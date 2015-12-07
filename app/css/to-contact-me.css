@@ -1,0 +1,147 @@
+
+
+/*
+.footer-wrapper{
+    background: #EFF3F7 url(../Images/line.png) no-repeat 0% 1%;
+    padding: 39px 0 39px 0;
+    
+    height: 10px;
+	margin-top: 50px;
+	text-align: center;
+}
+*/
+
+.b-forms {
+    float: right;
+    width: 650px;
+    margin-top: -436px;
+    background: #EFF3F7;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.question {
+    margin: 0;
+    width: 650px;    
+    color: #FFFFFF;
+    font-family: 'fira_sansbook';
+    font-size: 27px;
+    text-align: center;
+    line-height: 120px;
+    background: #48CBE8;
+}
+
+.liner-h1 {
+    border-bottom: 15px solid #6FE4FF;
+    background-color: #67DFFA;
+}
+
+.b-inside-form {
+    width: 445px;
+    height: 297px;
+    margin: 50px 0 0 100px;
+    padding-top: 24px;
+}
+
+.common-input {
+    border: 2px solid #85DCEF;
+    border-radius: 5px;
+    padding: 10px;
+    color: #85DCEF;
+}
+
+.common-name {
+    color: #B5B9C4;
+    font-family: 'fira_sanslight';
+    font-size: 19px;
+}
+
+.p-name {
+    margin: -70px 0 0 0px;
+    width: 40px;
+}
+
+.p-email {
+    margin: -30px 0px 0 235px;
+    width: 50px;
+}
+
+.p-massage {
+    margin: -235px 0 0 0px;
+    width: 102px;
+}
+
+.input-name {
+    
+}
+
+.input-email {
+    float: right;
+    width: 187px;
+}
+
+.area-massage {
+    resize: none;
+    width: 420px;
+    height: 180px;
+    margin: 50px 0px 0px 0px;
+}
+
+.button1 {
+    color: #ffffff;
+    font-family: 'fira_sansbook';
+    font-size: 19px;
+    background-color: #48CBE8;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 0px #3BA8C0;
+    padding: 5px 25px;
+    float: left;
+    margin: 135px 0px 195px 100px;
+}
+
+
+
+.button2 {
+    color: #ffffff;
+    font-family: 'fira_sansbook';
+    font-size: 19px;
+    background-color: #849DB5;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 0 #687B8F;
+    padding: 5px 25px;
+    float: right;
+    margin: 135px 100px 195px 0;
+}
+
+.button1:hover {
+    position: relative;
+    top: 1px;
+    box-shadow: none;
+}
+
+.button2:hover {
+    position: relative;
+    top: 1px;
+    box-shadow: none;
+}
+
+.button1:active {
+    box-shadow: inset 0px 2px 0px #3BA8C0;
+}
+
+.button2:active {
+    box-shadow: inset 0px 2px 0px #687B8F;
+}
+
+::-webkit-input-placeholder {
+    color: #85DCEF;
+    font-family: 'fira_sanslight';
+    font-size: 13px;
+}
+
+
+.common-input::-webkit-input-placeholder {opacity: 1; transition: opacity 0.3s ease;}
+
+.common-input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
