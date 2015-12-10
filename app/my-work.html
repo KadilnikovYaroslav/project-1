@@ -7,10 +7,15 @@
         <title>Test LoftSchool</title>
         <link rel="stylesheet" href="bower/normalize-css/normalize.css">
         <link rel="icon" type="image/png" href="Images/favicon.png">
+        <link rel="stylesheet" href="fonts/fonts.css">
+<!--
         <link rel="stylesheet" href="font/fira.css">
         <link rel="stylesheet" href="font/proximanova.css">
+-->
         <link rel="stylesheet" type="text/css" href="css/styles.css">
         <link rel="stylesheet" type="text/css" href="css/my-work.css">
+
+        <script src="bower/modernizr/modernizr.js"></script>
     </head>
 <body>
 <div class="header-wrapper">
@@ -46,35 +51,65 @@
                  </ul>
                 </div>
          <div class="b-my-work">
-             <h1>Мои работы</h1>
+             <h2>Мои работы</h2>
              <div class="portfolio">
                 <div class="project"><a href="https://www.google.ru/" class="site site-one">google.ru</a><img src="Images/google-3.jpg" alt="google">
                 <div class="fon"></div>
                 </div>
-                <span class="name-project project-one">Проект № 1</span>
+                <a href="https://www.google.ru/" class="link-project link-one">google.ru</a>
+                <span class="name-project project-one">Система поиска информации ...</span>
                 <div class="project"><a href="https://www.yandex.ua/" class="site site-two">yandex.ua</a><img src="Images/yandex-2.jpg" alt="yandex">
                 <div class="fon"></div>
                 </div>
-                 <span class="name-project project-two">Проект № 2</span>
+                <a href="https://www.yandex.ua/" class="link-project link-two">yandex.ua</a>
+                 <span class="name-project project-two">Поисковая система "Яндекс" ...</span>
                 <div class="project"><a href="https://www.youtube.com/" class="site site-three">youtube.com</a><img src="Images/you-tube.jpg" alt="youtube">
                 <div class="fon"></div>
                 </div>
-                <span class="name-project project-three">Проект № 3</span>
-                 <div class="add-project"><a href="" class="site-add"><span class="add">Довавить проект</span><img  class="pic-add" src="Images/add-project.png" alt="new-project"></a>
+                <a href="https://www.youtube.com/" class="link-project link-three">youtube.com</a>
+                <span class="name-project project-three">YouTube - видеохостинг ...</span>
+                 <div class="add-project"><a href="#" class="site-add"><span class="add">Довавить проект</span><img  class="pic-add" src="Images/add-project.png" alt="new-project"></a>
                 </div> 
              </div>
         </div>
     </div>
+
+      
+      <div class="popup">
+        <h3 class="h-name">Добавления проекта</h3>
+        <div class="close-popup"></div>
+        <div class="b-liner"></div>
+           <form class="form">
+              <label><p class="form-name">Название проекта</p><input type="text" placeholder="Введите название" class="common-placeholder" name="name-project"></label>
+               <p class="form-name">Картинка проекта</p>
+              <div class="addproject-box">
+    <input class="common-placeholder filename" type="text" name="filename" placeholder="Загрузите изображение" disabled>
+    <label class="add-proj">
+      <input class="fileupload" type="file" name="file">
+      <input class="fileurl" type="hidden" name="fileurl">
+    </label>
+  </div>
+              
+              <label><p class="form-name">URL проекта</p><input type="text" placeholder="Добавьте ссылку" class="common-placeholder" name="url-project"></label>
+              <label><p class="form-name">Описание</p><textarea placeholder="Пара слов о вашем проекте" class="common-placeholder area" name="description"></textarea></label>
+              <input class="button-add" type="submit" value="Добавить">
+            </form>
+      </div>
        
+           
             <div class="footer-wrapper">
         <div class="footer">
             <div class="enter"><a class="to-enter" href="entrance.html">Войти</a></div>
             <div class="copyright"><p>&copy; 2016. Это сайт Кадильникова Ярослава Олеговича, пожалуйста, не копируйте и не воруйте его</p></div>
         </div>
         </div>
+        
+        <div class="overlay"></div>
+
+
+<!--        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>-->
         <script src="bower/jquery/dist/jquery.js"></script>
+        <script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
         <script src="js/main.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-        <script src="modernizr/modernizr-custom.js"></script>
 </body>
 </html>

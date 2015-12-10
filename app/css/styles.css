@@ -13,13 +13,13 @@ body {
 
 .header-wrapper {
     background: #EFF3F7 url(../Images/line.png) no-repeat 0% 99%;
-    padding: 39px 0 40px 0px;
-    min-width: 970px;
+    padding: 15px 0 40px 0px;
+    min-width: 990px;
 }
 
 .header {
     max-width: 1400px;
-    margin: 0 0px 0 70px;  
+    margin: -5px auto;
 }
 
 .clearfix:after {
@@ -30,7 +30,7 @@ body {
 
 .wrapper {
 	width:960px;
-    margin:0 auto;
+    margin: 0 auto;
     
     position: relative;
 	min-height: 100%;
@@ -39,21 +39,24 @@ body {
 	overflow: hidden;
 }
 
+/*
 .wrapper:after {
 	content: "";
 	height: 80px;
 	display: block;
 }
+*/
+
 
 
 
 
 .footer-wrapper{
     background: #EFF3F7 url(../Images/line.png) no-repeat 0% 1%;
-    padding: 36px 20px 39px 0;
+    padding: 34px 24px 39px 0;
     min-width: 970px;
     height: 10px;
-    margin-top: 73px;
+    margin-top: 62px;
 	text-align: center;
 }
 
@@ -64,7 +67,7 @@ body {
 
 .enter {
     position: absolute;
-    
+    left: 338px;
     text-decoration: none;
 }
 
@@ -100,12 +103,12 @@ body {
 
 
 .logo {
-    margin-left: 120px;
+    margin: 16px 0 0 94px;
     float:left;
 }
 
 .social {
-    margin-right: 70px;
+    margin: 12px 96px 0 0;
     float: right;
 }
 
@@ -157,7 +160,8 @@ body {
     overflow: hidden;
     background: #eff3f7;
 	border-radius: 4px;
-	margin-top: 26px;
+	margin-top: 37px;
+    float: left;
 }
 
 .menu .menu-ul {
@@ -168,7 +172,7 @@ body {
 
 .menu .menu-item {
    border-top: 2px solid #3ba8c0;
-   margin: 0px 11px;
+   margin: 0px 6px;
 }
 
 .menu .menu-item:first-child {
@@ -179,7 +183,7 @@ body {
     background-color: #3BA8C0;
     margin: 0;
     margin-bottom: -2px;
-    padding-left: 11px;
+    padding-left: 6px;
 }
 
 .menu .menu-item.active .menu-link {
@@ -202,7 +206,9 @@ body {
 
 .contact {
     width: 250px;
-    margin-top: 23px;
+    margin-top: 24px;
+    float: left;
+    clear: both;
 }
 
 .contact_ul {
@@ -217,7 +223,7 @@ body {
     color: #EEF6F9;
     font-family: 'fira_sansbook';
     font-size: 21px;
-    padding: 10px 20px;
+    padding: 5px 20px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
@@ -228,7 +234,7 @@ body {
     font-family: 'fira_sansbook';
     font-size: 17px;
     background: url(../Images/spritesheet.png) no-repeat;
-    padding: 10px 80px;
+    padding: 6px 80px;
     text-decoration: none;
 }
 
@@ -273,24 +279,27 @@ body {
     
 }
 
+
+
 .about_me {
     width: 650px;
     background-color: #EFF3F7;
     border-radius: 5px;
-    float: right;
-    margin: -439px 0px 0px 0;
+    padding-bottom: 50px;
+    margin: 34px 0px 100px 309px;
 }
 
 .os { 
     font-family: 'fira_sansbook';
     font-size: 14px;
     color: #3BA8C0;
-    padding: 0px 0px 0px 20px;
+    padding: 15px 0px 15px 20px;
+    margin: 0;
 }
 
 .h1-info {
     font-size: 27px;
-    margin: 0.5em 0;
+    margin: 0;
 }
 
 .border {
@@ -334,6 +343,8 @@ body {
     font-size: 14px;
     float: right;
     margin: -33px 195px 85px 0px;
+    
+/*margin: -33px 195px 85px 0px;*/
 }
 
 .skills .html {
@@ -385,15 +396,15 @@ body {
     background-color: #EFF3F7;
     border-radius: 5px;
     float: right;
-    margin: -80px 0px 0 0;
+    margin: -80px 10px 0 0;
 }
 
-.block1 h1{
+.block1 .h2-experience{
     margin-top: 13;
     font-family: 'fira_sansbook';
-    font-size: 27px;
+    font-size: 26px;
     color:#3BA8C0;
-    padding: 0px 0px 13px 22px;
+    padding: 0px 0px 12px 22px;
     border-bottom: 2px solid #3BA8C0;
     width: 188px;
 }
@@ -404,14 +415,12 @@ body {
 }
 
 .block1 .p1{
-    margin-bottom: 9px;
-    background: url(../Images/ch.png) no-repeat 58px 8px;
+    background: url(../Images/ch.png) no-repeat 58px center;
+    list-style: none;
 }
 
-.block1 .p1 p{
-/*    margin: 0;*/
-    padding: 0;
-    margin: -3px 0 3px 125px;
+.common-str1 {
+    margin-left: 83px;
 }
 
 .block1 .p1 .string1 {
@@ -422,95 +431,76 @@ body {
 .block1 .p1 .string2 {
     font-family: 'fira_sanslight';
     font-size: 15px;
+    margin-top: -5px;
 }
 
 .block1 .p2{
-    padding-bottom: 39px;
-    background: url(../Images/ch.png) no-repeat 58px 7px;
+    padding-bottom: px;
+    background: url(../Images/ch.png) no-repeat 58px center;
+    list-style: none;
 }
 
-.block1 .p2 p{
-    margin: -1px;
-    padding: 0;
-    font-family: 'fira_sansbook';
-    font-size: 17px;
-    margin-left: 125px;
-}
-
-.block1 .p2 .string1 {
+.block1 .p2 .string3 {
     font-family: 'fira_sansbook';
     font-size: 17px;
 }
 
-.block1 .p2 .string2 {
+.block1 .p2 .string4 {
     font-family: 'fira_sanslight';
     font-size: 15px;
+    margin-top: -7px;
 }
+
 
 .block2{
     width:650px;
     background-color: #EFF3F7;
     border-radius: 5px;
     float: right;
-    margin: 22px 0px 0 0;
-    padding-bottom: 34px;
+    margin: 20px 10px 0 0;
 }
 
-.block2 h1{
+.block2 .h2-education{
     margin: 0;
     font-family: 'fira_sansbook';
-    font-size:26px;
+    font-size: 26px;
     color:#3BA8C0;
     padding: 16px 0px 14px 23px;
     border-bottom: 2px solid #3BA8C0;
     width: 197px;
 }
 
-.block2 .p{
-    width: 650px;
-    margin: 17px 0 0px -3px;
+.common-str2 {
+    margin-left: 83px;
 }
 
-.block2 .p1{
-    margin-bottom: 10px;
-    background: url(../Images/uc.png) no-repeat 58px 10px;
+.block2 .p3{
+    background: url(../Images/uc.png) no-repeat 54px center;
+    list-style: none;
 }
 
-.block2 .p1 p{
-    margin: 0;
-    padding: 0;
-    margin-left: 128px;
-}
-
-.block2 .p1 .string1 {
+.block2 .p3 .string5 {
     font-family: 'fira_sansbook';
     font-size: 17px;
 }
 
-.block2 .p1 .string2 {
+.block2 .p3 .string6 {
     font-family: 'fira_sanslight';
     font-size: 15px;
 }
 
-.block2 .p2{
-    padding-bottom: 0px;
-    background: url(../Images/list.png) no-repeat 67px 8px;
+.block2 .p4{
+    list-style: none;
+    background: url(../Images/list.png) no-repeat 62px center;
 }
 
-.block2 .p2 p{
-    margin: 0;
-    padding: 0;
-    font-family: 'fira_sansbook';
-    font-size: 17px;
-    margin-left: 128px;
-}
-
-.block2 .p2 .string1 {
+.block2 .p4 .string7 {
     font-family: 'fira_sansbook';
     font-size: 17px;
 }
 
-.block2 .p2 .string2 {
+.block2 .p4 .string8 {
     font-family: 'fira_sanslight';
     font-size: 15px;
+    margin-top: -5px;
 }

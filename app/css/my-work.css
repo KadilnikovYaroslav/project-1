@@ -2,15 +2,15 @@
     width: 650px;
     background-color: #EFF3F7;
     border-radius: 5px;
-    float: right;
-    margin-top: -436px;
+    margin: 34px 0px 100px 309px;
+    padding-bottom: 50px;
 }
 
-.b-my-work h1{
+.b-my-work h2{
     font-family: 'fira_sansbook';
     font-size:27px;
     color:#3BA8C0;
-    padding: 0px 0px 10px 20px;
+    padding: 15px 0px 15px 20px;
     border-bottom: 2px solid #3BA8C0;
     width: 210px;
 }
@@ -38,33 +38,64 @@
     transform: scale(1);
 }
 
+.link-project {
+    text-decoration: none;
+    font-family: 'fira_sanslight_italic';
+    font-size: 13px;
+    color: #47ADC4;
+    position: absolute;
+    top: 285px;
+}
+
+.link-one {
+    left: 395px;
+}
+
+.link-two {
+    left: 605px;
+}
+
+.link-three {
+    left: 805px;
+}
+
 .name-project {
     font-family: 'fira_sanslight';
     font-size: 15px;
-    display: inline-block;
+    display: block;
     position: absolute;
     top: 310px;
+    width: 140px
     
 }
 
 .project-one {
     position: absolute;
-    left: 395px;
+    left: 350px;
+    text-align: center;
+    border: 1px solid #7CC3D4;
+    border-radius: 2px;
 }
 
 .project-two {
     position: absolute;
-    left: 605px;
+    left: 565px;
+    text-align: center;
+    border: 1px solid #7CC3D4;
+    border-radius: 2px;
 }
 
 .project-three {
     position: absolute;
-    left: 815px;
+    left: 770px;
+    text-align: center;
+    border: 1px solid #7CC3D4;
+    border-radius: 2px;
 }
 
 .site {
     position: absolute;
-    top: 185px;
+    top: 200px;
     color: #ffffff;
     border: 2px solid #ffffff;
     border-radius: 5px;
@@ -73,18 +104,19 @@
     transform: scale(0);
     transition: all 0.6s;
     z-index: 1;
+    text-decoration: none;
 }
 
 .site-one {
-    left: 400px;
+    left: 390px;
 }
 
 .site-two {
-    left: 607px;
+    left: 597px;
 }
 
 .site-three {
-    left: 808px;
+    left: 797px;
 }
 
 .portfolio .project:hover .site {
@@ -95,7 +127,7 @@
 .add-project {
     width: 180px;
     height: 125px;
-    margin: 20px 0px 80px 20px;
+    margin: 40px 0px 0px 20px;
     background-color: #EDF8FC;
     border: 2px dashed;
     border-color: #7CC3D4;
@@ -112,15 +144,147 @@
     font-family: 'fira_sanslight';
     font-size: 13px;
     position: absolute;
-    top: 400px;
-    left: 382px;
+    top: 430px;
+    left: 375px;
 }
 
 .pic-add {
     position: absolute;
-    top: 435px;
-    left: 418px;
+    top: 465px;
+    left: 405px;
 }
 
 
 
+
+.popup {
+    width: 350px;
+    overflow: hidden;
+    background: #eff3f7;
+	border-radius: 5px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 1000;
+    display: none;
+}
+
+.h-name {
+    margin: 0;
+    color: #FFFFFF;
+    font-family: 'fira_sansbook';
+    font-size: 25px;
+    padding-left: 10px;
+    background: #48CBE8;
+}
+
+.close-popup {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    left: 315px;
+    background: url(../Images/c.png) 0% 0%;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.b-liner {
+    border-bottom: 10px solid #6FE4FF;
+    background-color: #67DFFA;
+}
+
+.form {
+    padding-left: 35px;
+}
+
+.form-name {
+    width: 130px;
+    color: #313339;
+    font-family: 'fira_sanslight';
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.area {
+    resize: none;
+    width: 250px;
+    height: 100px;
+}
+
+.button-add {
+    color: #ffffff;
+    font-family: 'fira_sansbook';
+    font-size: 19px;
+    background-color: #48CBE8;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 0px #3BA8C0;
+    padding: 0px 25px;
+    margin: 20px 0px 20px 70px;
+}
+
+.button-add:hover {
+    position: relative;
+    top: 1px;
+    box-shadow: none;
+}
+
+.button-add:active {
+    box-shadow: inset 0px 2px 0px #3BA8C0;
+}
+
+.common-placeholder {
+    width: 250px;
+    border: 2px solid #85DCEF;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+::-webkit-input-placeholder {
+    color: #85DCEF;
+    font-family: 'fira_sanslight';
+    font-size: 13px;
+}
+
+
+.common-placeholder::-webkit-input-placeholder {opacity: 1; transition: opacity 0.3s ease;}
+
+.common-placeholder:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+
+
+.overlay {
+    background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: 999;
+    display: none;
+}
+
+.filename {
+    background-color: #fff; 
+}
+
+.fileupload {
+    display: none;
+}
+
+.add-proj {
+    display: block;
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    top: 158px;
+    left: 258px;
+    background: #48CBE8 url(../Images/cloud.png) no-repeat 50% 50%;
+    box-sizing: border-box;
+    border-radius: 0px 5px 5px 0;
+    border: 2px solid #85DCEF;
+    cursor: pointer;
+}

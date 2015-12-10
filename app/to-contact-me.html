@@ -7,10 +7,17 @@
         <title>Test LoftSchool</title>
         <link rel="stylesheet" href="bower/normalize-css/normalize.css">
         <link rel="icon" type="image/png" href="Images/favicon.png">
+        <link rel="stylesheet" href="fonts/fonts.css">
+<!--
         <link rel="stylesheet" href="font/fira.css">
         <link rel="stylesheet" href="font/proximanova.css">
+-->
         <link rel="stylesheet" type="text/css" href="css/styles.css">
         <link rel="stylesheet" type="text/css" href="css/to-contact-me.css">
+
+        <script src="bower/modernizr/modernizr.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+
     </head> 
 <body>
         <div class="header-wrapper">
@@ -46,16 +53,17 @@
                  </ul>
                 </div>
                 <div class="b-forms">
-                    <h1 class="question">У вас интересный проект? Напишите мне!</h1>
+                    <h2 class="question">У вас интересный проект? Напишите мне!</h2>
                     <div class="liner-h1"></div>           
                     <form action="" method="" class="b-inside-form">
                         <label><input class="input-name common-input" type="text" name="first_name" placeholder="Как к вам обращаться"><p class="p-name common-name">Имя</p></label>
 
                         <label><input class="input-email common-input" type="email" name="email" placeholder="Куда мне писать">      <p class="p-email common-name">Email</p></label>
-
-                        <label><textarea class="area-massage common-input" name="massage" placeholder="Кратко в чем суть"></textarea><p class="p-massage common-name">Сообщения</p></label>
-                    </form>           
-                            
+                        <p class="p-massage common-name">Сообщения</p>
+                        <label><textarea class="area-massage common-input" name="massage" placeholder="Кратко в чем суть"></textarea></label>
+                    </form>
+                    
+                    <div class="g-recaptcha" data-sitekey="Google Site Key"></div>
                             <input class="button1" type="submit" value="Отправить">
                             <input class="button2" type="reset" value="Очистить">
                 </div>
@@ -67,9 +75,10 @@
             <div class="copyright"><p>&copy; 2016. Это сайт Кадильникова Ярослава Олеговича, пожалуйста, не копируйте и не воруйте его</p></div>
         </div>
         </div>
+
+<!--        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>-->
         <script src="bower/jquery/dist/jquery.js"></script>
+        <script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
         <script src="js/main.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-        <script src="modernizr/modernizr-custom.js"></script>
 </body>
 </html>

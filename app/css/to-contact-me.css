@@ -11,6 +11,7 @@
 }
 */
 
+/*
 .b-forms {
     float: right;
     width: 650px;
@@ -19,6 +20,16 @@
     border-radius: 10px;
     overflow: hidden;
 }
+*/
+
+.b-forms {
+    width: 650px;
+    background: #EFF3F7;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 37px 0px 100px 309px;
+}
+
 
 .question {
     margin: 0;
@@ -67,7 +78,7 @@
 }
 
 .p-massage {
-    margin: -235px 0 0 0px;
+    margin: 50px 0 0 0px;
     width: 102px;
 }
 
@@ -84,7 +95,6 @@
     resize: none;
     width: 420px;
     height: 180px;
-    margin: 50px 0px 0px 0px;
 }
 
 .button1 {
@@ -97,7 +107,7 @@
     box-shadow: 0px 2px 0px #3BA8C0;
     padding: 5px 25px;
     float: left;
-    margin: 135px 0px 195px 100px;
+    margin: 30px 0px 50px 100px;
 }
 
 
@@ -112,7 +122,7 @@
     box-shadow: 0 2px 0 #687B8F;
     padding: 5px 25px;
     float: right;
-    margin: 135px 100px 195px 0;
+    margin: 30px 100px 50px 0;
 }
 
 .button1:hover {
@@ -145,3 +155,8 @@
 .common-input::-webkit-input-placeholder {opacity: 1; transition: opacity 0.3s ease;}
 
 .common-input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+
+.g-recaptcha{
+    width: 303px;
+    margin: 30px 0 0 175px ;
+}
