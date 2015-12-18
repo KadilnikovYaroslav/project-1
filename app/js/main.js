@@ -7,21 +7,34 @@
 });
 
 
-$(document).ready(function() {
-    $(".overlay").css({opacity: 0.5});
+$(function() {
+   //  $('.site-add').on('click'(function(e){
+   //      e.preventDefault();         
+   // });
+
+    $('.overlay').css({opacity: 0.5});
     positionCenter($(".popup"));
-    
-//    $('.site-add').on('click'.function(e){
-//        e.preventDefault();         
-//    });
-    
-    $(".add-project").click(function() {
-        $(".popup, .overlay").fadeIn(500);
+        
+    $('.add-project').click(function() {
+        $('.popup, .overlay').fadeIn(500);
     });
     
-    $(".close-popup").click(function() {
-       $(".popup, .overlay").fadeOut(500); 
+    $('.close-popup').click(function() {
+       $('.popup, .overlay').fadeOut(500); 
     });
+
+     $('form').click(function() {
+        $('.server-mes').text('').hide();
+    });
+
+    $('.close-popup').click(function() {
+        $('.server-mes').text('').hide();
+        $('form').trigger('reset');
+    });
+
+    // function onClose() {
+    //     form.find('.server-mes').text('').hide();
+    // }
     
     function positionCenter(elem) {
         elem.css({
@@ -32,26 +45,64 @@ $(document).ready(function() {
 });
 
 
-//var validation = (function () {
-//    
-//    var    
-//        _init = function () {
-//            _setUpListeners();  
-//        },
-//    
-//        _setUpListeners = function () {
-//            
-//        },
-//    
-//    return {
-//        init: _init
-//    }
-//    
-//    
-//}());
-//
-//     validation.init();
-//
-//        $
-//});
+var myModule = (function () {
+    
+    var init = function () {
+            _setUpListners();  
+        };
+    
+    var _setUpListners = function () {
+        $('#valid-form').on('submit', _valForm);
+        };
+    
+    var _valForm = function (e) {
+        e.preventDefault();
+
+        var form = $(this),
+            url = 'validation.php',
+            defObj = _ajaxForm(form, url);
+
+        if(defObj) {
+            
+        
+            defObj.done(function(ans) {
+                if(ans.status === 'OK'){
+                    form.find('.success-mes').text(ans.text).show();
+                }else{
+                    form.find('.error-mes').text(ans.text).show();
+                }
+            });
+        }
+        
+    };
+
+    var _ajaxForm = function (form, url) {
+
+        if (!validation.validateForm(form)) return false;
+        data = form.serialize();
+            console.log(data);
+        var result = $.ajax({
+            url: url,
+            type: 'POST',
+            dataType: 'json',
+            data: data
+        })
+        
+        .fail(function(ans) {
+            console.log('Проблемы PHP');
+            form.find('.error-mes').text('На сервере произошла ошибка').show();
+        });
+
+        return result;
+
+    };
+    
+    return {
+        init: init
+    };
+    
+    
+})();
+
+     myModule.init();
 

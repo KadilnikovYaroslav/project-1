@@ -198,6 +198,20 @@
     padding-left: 35px;
 }
 
+.error-mes{
+    width: 50px;
+    height: 20px;
+    background-color: red;
+    display:none;
+}
+
+.success-mes{
+    width: 50px;
+    height: 20px;
+    background-color: red;
+    display:none;
+}
+
 .form-name {
     width: 130px;
     color: #313339;
@@ -212,6 +226,11 @@
     resize: none;
     width: 250px;
     height: 100px;
+}
+
+.error {
+    border: 2px solid rgba(255, 0, 0, 0.5);
+    background-color: rgba(255, 0, 0, 0.3);
 }
 
 .button-add {

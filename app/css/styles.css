@@ -239,31 +239,17 @@ body {
 }
 
 .contact_ul .email {
-    background-position: 27px -4px;
-}
-
-.contact_ul .tel {
-    background-position: 20px  -110px;
-}
-
-.contact_ul .skype {
-    background-position: 15px  -53px;
-}
-
-.contact_ul .email {
+    background-position: 10px -13px;
     background-color: #41B9D4;
 }
 
 .contact_ul .tel {
-    background-color: #41B9D4;
-}
-
-.contact_ul .skype {
-    background-color: #41B9D4;
-}
-
-.contact_ul .tel {
+    background-position: 10px  -152px;
     background-color: #48CBE8;
+}
+
+.contact_ul .skype {
+    background: #41B9D4 url(../Images/skype.png) no-repeat 15% center;
 }
 
 .contact_ul .skype {

@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Test LoftSchool</title>
         <link rel="stylesheet" href="bower/normalize-css/normalize.css">
+        <link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
         <link rel="icon" type="image/png" href="Images/favicon.png">
         <link rel="stylesheet" href="fonts/fonts.css">
 <!--
@@ -55,17 +56,20 @@
                 <div class="b-forms">
                     <h2 class="question">У вас интересный проект? Напишите мне!</h2>
                     <div class="liner-h1"></div>           
-                    <form action="" method="" class="b-inside-form">
-                        <label><input class="input-name common-input" type="text" name="first_name" placeholder="Как к вам обращаться"><p class="p-name common-name">Имя</p></label>
+                    <form action="" method="" class="b-inside-form" id="contact-me">
+                        <label><input class="input-name common-input" type="text" name="first_name" placeholder="Как к вам обращаться" qtip-content="Введите ваше имя"><p class="p-name common-name">Имя</p></label>
 
-                        <label><input class="input-email common-input" type="email" name="email" placeholder="Куда мне писать">      <p class="p-email common-name">Email</p></label>
+                        <label><input class="input-email common-input" type="email" name="email" placeholder="Куда мне писать" qtip-content="Введите ваш email"><p class="p-email common-name">Email</p></label>
                         <p class="p-massage common-name">Сообщения</p>
-                        <label><textarea class="area-massage common-input" name="massage" placeholder="Кратко в чем суть"></textarea></label>
+                        <label><textarea class="area-massage common-input" name="massage" placeholder="Кратко в чем суть" qtip-content="Что тебе снадова)"></textarea></label>
+
+                        <input class="button1" type="submit" value="Отправить">
+                        <input class="button2" type="reset" value="Очистить">
                     </form>
                     
                     <div class="g-recaptcha" data-sitekey="Google Site Key"></div>
-                            <input class="button1" type="submit" value="Отправить">
-                            <input class="button2" type="reset" value="Очистить">
+                           <!--  <input class="button1" type="submit" value="Отправить">
+                            <input class="button2" type="reset" value="Очистить"> -->
                 </div>
         </div>
 
@@ -79,6 +83,9 @@
 <!--        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>-->
         <script src="bower/jquery/dist/jquery.js"></script>
         <script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
-        <script src="js/main.js"></script>
+        <script src="bower/qtip2/jquery.qtip.js"></script>
+        <script src="js/contactMe.js"></script>
+        <script src="js/validationjs.js"></script>
+        <!-- // <script src="js/main.js"></script> -->
 </body>
 </html>

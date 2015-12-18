@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Test LoftSchool</title>
         <link rel="stylesheet" href="bower/normalize-css/normalize.css">
+        <link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
         <link rel="icon" type="image/png" href="Images/favicon.png">
         <link rel="stylesheet" href="fonts/fonts.css">
 <!--
@@ -79,19 +80,21 @@
         <h3 class="h-name">Добавления проекта</h3>
         <div class="close-popup"></div>
         <div class="b-liner"></div>
-           <form class="form">
-              <label><p class="form-name">Название проекта</p><input type="text" placeholder="Введите название" class="common-placeholder" name="name-project"></label>
+           <form class="form" id="valid-form">
+              <div class="error-mes server-mes"></div>
+              <div class="success-mes server-mes"></div>
+              <label><p class="form-name">Название проекта</p><input type="text" placeholder="Введите название" qtip-content="Введите название проекта" class="common-placeholder" name="name-project"></label>
                <p class="form-name">Картинка проекта</p>
               <div class="addproject-box">
-    <input class="common-placeholder filename" type="text" name="filename" placeholder="Загрузите изображение" disabled>
+    <input class="common-placeholder filename" type="text" name="filename" placeholder="Загрузите изображение" qtip-content="Выберите картинку для проекта" disabled>
     <label class="add-proj">
       <input class="fileupload" type="file" name="file">
       <input class="fileurl" type="hidden" name="fileurl">
     </label>
   </div>
               
-              <label><p class="form-name">URL проекта</p><input type="text" placeholder="Добавьте ссылку" class="common-placeholder" name="url-project"></label>
-              <label><p class="form-name">Описание</p><textarea placeholder="Пара слов о вашем проекте" class="common-placeholder area" name="description"></textarea></label>
+              <label><p class="form-name">URL проекта</p><input type="text" placeholder="Добавьте ссылку" qtip-content="Напишите адрес проекта" class="common-placeholder" name="url-project"></label>
+              <label><p class="form-name">Описание</p><textarea placeholder="Пара слов о вашем проекте" qtip-content="Напишите описание проекта" class="common-placeholder area" name="description"></textarea></label>
               <input class="button-add" type="submit" value="Добавить">
             </form>
       </div>
@@ -110,6 +113,8 @@
 <!--        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>-->
         <script src="bower/jquery/dist/jquery.js"></script>
         <script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
+        <script src="bower/qtip2/jquery.qtip.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/validationjs.js"></script>
 </body>
 </html>

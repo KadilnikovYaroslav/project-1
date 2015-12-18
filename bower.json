@@ -4,6 +4,7 @@
     "normalize-css": "normalize.css#~3.0.3",
     "jquery-placeholder": "~2.3.0",
     "modernizr": "2.8.3",
-    "jquery": "1.11"
+    "jquery": "1.11",
+    "qtip2": "~2.2.1"
   }
 }

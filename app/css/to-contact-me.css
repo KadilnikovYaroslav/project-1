@@ -97,6 +97,11 @@
     height: 180px;
 }
 
+.error {
+    border: 2px solid rgba(255, 0, 0, 0.5);
+    background-color: rgba(255, 0, 0, 0.3);
+}
+
 .button1 {
     color: #ffffff;
     font-family: 'fira_sansbook';
@@ -107,7 +112,7 @@
     box-shadow: 0px 2px 0px #3BA8C0;
     padding: 5px 25px;
     float: left;
-    margin: 30px 0px 50px 100px;
+    margin: 110px 0px 0px 0px;
 }
 
 
@@ -122,18 +127,18 @@
     box-shadow: 0 2px 0 #687B8F;
     padding: 5px 25px;
     float: right;
-    margin: 30px 100px 50px 0;
+    margin: 110px 0px 50px 0;
 }
 
 .button1:hover {
     position: relative;
-    top: 1px;
+    top:1px;
     box-shadow: none;
 }
 
 .button2:hover {
     position: relative;
-    top: 1px;
+    top:1px;
     box-shadow: none;
 }
 
@@ -157,6 +162,7 @@
 .common-input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
 
 .g-recaptcha{
+    position: absolute;
     width: 303px;
-    margin: 30px 0 0 175px ;
+    margin: 0px 0 0 175px ;
 }
