@@ -179,12 +179,12 @@
 }
 
 .close-popup {
-    width: 20px;
-    height: 20px;
+    width: 28px;
+    height: 28px;
     position: absolute;
-    top: 10px;
+    top: 6px;
     left: 315px;
-    background: url(../Images/c.png) 0% 0%;
+    background: url(../Images/close-popup.png) 40% 40% no-repeat;
     border-radius: 50px;
     cursor: pointer;
 }
@@ -301,7 +301,7 @@
     position: absolute;
     top: 158px;
     left: 258px;
-    background: #48CBE8 url(../Images/cloud.png) no-repeat 50% 50%;
+    background: #48CBE8 url(../Images/download.png) no-repeat 50% 50%;
     box-sizing: border-box;
     border-radius: 0px 5px 5px 0;
     border: 2px solid #85DCEF;

@@ -27,9 +27,6 @@ var validation = (function () {
 			position = {
                 my: 'left center',
 				at: 'right center'
-//                adjust: {
-//					method: 'shift none'
-//			    }
             }
 		}
 		  else {

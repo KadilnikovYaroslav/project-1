@@ -79,20 +79,19 @@ var myModule = (function () {
     var _ajaxForm = function (form, url) {
 
         if (!validation.validateForm(form)) return false;
-        data = form.serialize();
-            console.log(data);
-        var result = $.ajax({
-            url: url,
-            type: 'POST',
-            dataType: 'json',
-            data: data
-        })
         
-        .fail(function(ans) {
-            console.log('Проблемы PHP');
-            form.find('.error-mes').text('На сервере произошла ошибка').show();
-        });
+        var data = form.serialize();
 
+	    var result = $.ajax({ 
+	        type: 'POST',
+	        url: url,
+	        dataType : 'JSON',
+	        data: data
+	      }).fail( function(ans) {
+	        console.log('Проблемы в PHP');
+	        form.find('.error-mes').text('На сервере произошла ошибка').show();
+	      });
+        
         return result;
 
     };
@@ -105,4 +104,3 @@ var myModule = (function () {
 })();
 
      myModule.init();
-
