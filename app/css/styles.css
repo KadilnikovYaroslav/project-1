@@ -39,18 +39,6 @@ body {
 	overflow: hidden;
 }
 
-/*
-.wrapper:after {
-	content: "";
-	height: 80px;
-	display: block;
-}
-*/
-
-
-
-
-
 .footer-wrapper{
     background: #EFF3F7 url(../Images/line.png) no-repeat 0% 1%;
     padding: 34px 24px 39px 0;
@@ -89,18 +77,6 @@ body {
     font-family: 'fira_sanslight';
     margin: -15px 0px 0px 285px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 .logo {
     margin: 16px 0 0 94px;
@@ -260,12 +236,8 @@ body {
 
 .link:hover .sub-liner {
     padding-bottom: px;
-    border-bottom: 1px solid #ffffff;
-    
-    
+    border-bottom: 1px solid #ffffff;  
 }
-
-
 
 .about_me {
     width: 650px;

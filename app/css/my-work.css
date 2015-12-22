@@ -154,9 +154,6 @@
     left: 405px;
 }
 
-
-
-
 .popup {
     width: 350px;
     overflow: hidden;
@@ -182,9 +179,9 @@
     width: 28px;
     height: 28px;
     position: absolute;
-    top: 6px;
-    left: 315px;
-    background: url(../Images/close-popup.png) 40% 40% no-repeat;
+    top: 5px;
+    left: 310px;
+    background: url(../Images/close-popup.png) 50% 50% no-repeat;
     border-radius: 50px;
     cursor: pointer;
 }
@@ -199,38 +196,44 @@
 }
 
 .error-mes{
-    width: 50px;
-    height: 20px;
-    background-color: red;
+    width: 270px;
+    height: 17px;
+    margin-top: 10px;
+    text-align: center;
+    padding: 8px;
+    color: black;
+    border: 2px solid rgba(255, 0, 0, 0.5);
+    background-color: rgba(255, 0, 0, 0.3);
     display:none;
+    border-radius: 5px;
 }
 
 .success-mes{
-    width: 50px;
-    height: 20px;
-    background-color: red;
+    width: 270px;
+    height: 35px;
+    margin-top: 10px;
+    text-align: center;
+    color: black;
+    border: 2px solid rgba(0, 255, 39, 0.5);
+    background-color: rgba(0, 255, 39, 0.3);
     display:none;
+    border-radius: 5px;
 }
 
 .form-name {
-    width: 130px;
     color: #313339;
     font-family: 'fira_sanslight';
     font-size: 15px;
     font-weight: bold;
     margin: 0;
     margin-top: 10px;
+    display: inline-block;
 }
 
 .area {
     resize: none;
     width: 250px;
     height: 100px;
-}
-
-.error {
-    border: 2px solid rgba(255, 0, 0, 0.5);
-    background-color: rgba(255, 0, 0, 0.3);
 }
 
 .button-add {
@@ -290,20 +293,34 @@
     background-color: #fff; 
 }
 
-.fileupload {
-    display: none;
+.error {
+    border: 2px solid rgba(255, 0, 0, 0.5);
+    background-color: rgba(255, 0, 0, 0.3);
 }
 
-.add-proj {
-    display: block;
-    width: 50px;
-    height: 40px;
-    position: absolute;
-    top: 158px;
-    left: 258px;
-    background: #48CBE8 url(../Images/download.png) no-repeat 50% 50%;
-    box-sizing: border-box;
-    border-radius: 0px 5px 5px 0;
-    border: 2px solid #85DCEF;
+.fileupload {
+    opacity: 0;
+    filter: alpha(opacity:0);
+    width: 52px;
+    height: 65px;
+    position: relative;
+    top: -25px;
+    cursor: pointer;
+}
+
+.addproject-box {
+    position: relative;
+}
+
+.add-proj{
+	display: block;
+    width: 52px;
+    height: 37px;
+	position: absolute;
+    right: 13.4%;
+    top: 2px;
+	background: url(../Images/download.png) 50% 50% no-repeat;
+	background-color: #48cbe8;
+	border-radius: 0 3px 3px 0;
     cursor: pointer;
 }

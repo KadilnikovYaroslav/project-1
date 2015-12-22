@@ -13,7 +13,7 @@ var contactMe = (function () {
 		e.preventDefault();
 
 		var form = $(this),
-			url = 'contactMe.php',
+			url = $(this).attr('action'),
 			defObj = _ajaxForm(form, url);
         
          if(defObj) {        

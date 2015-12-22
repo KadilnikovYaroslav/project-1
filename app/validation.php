@@ -9,7 +9,7 @@
 		$data['text'] = 'Заполните имя';
 	}else {
 		$data['status'] = 'OK';
-		$data['text'] = 'Хорошая работа';
+		$data['text'] = 'Вы заполнили все поля корректно, спасибо!';
 	}
 
 	header('Content-Type: application/json');

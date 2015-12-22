@@ -33,7 +33,6 @@ var validation = (function () {
 			position = {
 				my: 'right center',
 				at: 'left center',
-//                target: $('.input-email'),
 				adjust: {
 					method: 'shift none'
 				}
@@ -54,10 +53,10 @@ var validation = (function () {
 			},
 			position: position,
 			style: {
-				classes: 'pishi-cvoi-stil-esli-nado qtip-rounded',
+				classes: 'qtip-rounded',
 				tip: {
 					height: 10,
-					width: 16
+					width: 5
 				}
 			}
 
@@ -65,12 +64,11 @@ var validation = (function () {
     };
 
 	var validateForm = function (form) {
-		console.log('я в модуле валидации проверяю форму');
 
 		var elements = form.find('input, textarea').not('input[type="file"], input[type="hidden"]'),
 			valid = true;
 		$.each(elements, function (index, val) {
-			console.log(val);
+
 			var element = $(val),
 				    val = element.val(),
 				    pos = element.attr('qtip-position');
@@ -81,6 +79,8 @@ var validation = (function () {
 				valid = false;
 			}
 		});
+        
+        return valid;
 	};
 
 	return {

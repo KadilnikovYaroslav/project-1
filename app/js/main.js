@@ -44,63 +44,9 @@ $(function() {
     }
 });
 
-
-var myModule = (function () {
-    
-    var init = function () {
-            _setUpListners();  
-        };
-    
-    var _setUpListners = function () {
-        $('#valid-form').on('submit', _valForm);
-        };
-    
-    var _valForm = function (e) {
-        e.preventDefault();
-
-        var form = $(this),
-            url = 'validation.php',
-            defObj = _ajaxForm(form, url);
-
-        if(defObj) {
-            
-        
-            defObj.done(function(ans) {
-                if(ans.status === 'OK'){
-                    form.find('.success-mes').text(ans.text).show();
-                }else{
-                    form.find('.error-mes').text(ans.text).show();
-                }
-            });
-        }
-        
-    };
-
-    var _ajaxForm = function (form, url) {
-
-        if (!validation.validateForm(form)) return false;
-        
-        var data = form.serialize();
-
-	    var result = $.ajax({ 
-	        type: 'POST',
-	        url: url,
-	        dataType : 'JSON',
-	        data: data
-	      }).fail( function(ans) {
-	        console.log('Проблемы в PHP');
-	        form.find('.error-mes').text('На сервере произошла ошибка').show();
-	      });
-        
-        return result;
+ if(typeof console === 'undefined' || typeof console.log === 'undefined') {
+    var console = {};
+    console.log = function(){
 
     };
-    
-    return {
-        init: init
-    };
-    
-    
-})();
-
-     myModule.init();
+ }
