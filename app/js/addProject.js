@@ -22,7 +22,7 @@ var addProject = (function (){
 		$('#filename')
 			.val(name) 
 			.trigger('hideTooltip')
-			.removeClass('has-error'); 
+			.removeClass('error'); 
 	};
 
 	var _addProject = function (e){

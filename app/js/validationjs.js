@@ -8,21 +8,16 @@ var validation = (function () {
 	var _setUpListners = function () {
 		$('form').on('keydown', '.error', _removeError);
         $('form').on('reset', _clearForm);
-        $('form').on('change', _clearInputFile);
 	};
 
     var _removeError = function () {
-      $(this).removeClass('error');
+        $(this).removeClass('error');
     };
     
     var _clearForm = function (form) {
         var form = $(this);
         form.find('input, textarea').trigger('hideTooltip');
         form.find('.error').removeClass('error');
-    };
-    
-    var _clearInputFile = function () {
-        $('input').removeClass('error');
     };
     
 	var _createQtip = function (element, position) {
@@ -57,7 +52,7 @@ var validation = (function () {
 			},
 			position: position,
 			style: {
-				classes: 'qtip-rounded',
+				classes: 'style-tooltip qtip-rounded',
 				tip: {
 					height: 10,
 					width: 5
@@ -69,7 +64,8 @@ var validation = (function () {
 
 	var validateForm = function (form) {
 
-		var elements = form.find('input, textarea').not('input[type="file"], input[type="hidden"]'),
+		var elements = form.find('input, textarea')
+		 .not('input[type="file"], input[type="hidden"]'),
             
 			valid = true;
         

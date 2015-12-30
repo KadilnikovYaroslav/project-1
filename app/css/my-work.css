@@ -196,7 +196,7 @@
 }
 
 .error-mes{
-    width: 270px;
+    width: 252px;
     height: 17px;
     margin-top: 10px;
     text-align: center;
@@ -291,6 +291,13 @@
 
 .filename {
     background-color: #fff; 
+}
+
+.style-tooltip {
+    color: white;
+    border: 1px solid rgba(255, 0, 0, 0.5);
+    background-color: rgba(255, 0, 0, 0.8);
+    border-radius: 5px;
 }
 
 .error {

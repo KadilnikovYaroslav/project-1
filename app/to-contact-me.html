@@ -51,19 +51,23 @@
                 </div>
                 <div class="b-forms">
                     <h2 class="question">У вас интересный проект? Напишите мне!</h2>
-                    <div class="liner-h1"></div>           
-                    <form action="validation.php" method="post" class="b-inside-form" id="contact-me">
+                    <div class="liner-h1"></div>
+                         <form action="val-php-contact-me.php" method="post" class="b-inside-form" id="contact-me">      
+                   <!--  <form action="val-php-contact-me.php" method="post" class="b-inside-form" id="contact-me"> -->
+                    <!-- method="post" action="validation.php" id="add-new-project" class="form" id="valid-form" -->
+                        <div class="error-mes server-mes"></div>
+                        <div class="success-mes server-mes"></div>
                         <label><input class="input-name common-input" type="text" name="first_name" placeholder="Как к вам обращаться" qtip-content="Введите ваше имя"><p class="p-name common-name">Имя</p></label>
 
                         <label><input class="input-email common-input" type="email" name="email" placeholder="Куда мне писать" qtip-position="right" qtip-content="Введите ваш email"><p class="p-email common-name">Email</p></label>
                         <p class="p-massage common-name">Сообщения</p>
                         <label><textarea class="area-massage common-input" name="massage" placeholder="Кратко в чем суть" qtip-content="Опишите кратко суть проекта"></textarea></label>
-
+                        <div class="recaptcha"></div> 
                         <input class="button1" type="submit" value="Отправить">
                         <input class="button2" type="reset" value="Очистить">
                     </form>
                     
-                    <div class="g-recaptcha" data-sitekey="Google Site Key"></div>
+                    <!-- <div class="g-recaptcha" data-sitekey="Google Site Key"></div> -->
                 </div>
         </div>
 

@@ -1,6 +1,6 @@
 <?php
 	
-	$name = $_POST['name-project'];
+	$name = $_POST['first_name'];
 	$data = array();
 
 

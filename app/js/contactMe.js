@@ -40,6 +40,7 @@ var contactMe = (function () {
 	 		data: data
           }).fail( function(ans) {
 	 		console.log('Проблемы PHP');
+	 		form.find('.error-mes').text('На сервере произошла ошибка').show();
 	 	});
         
         return result;
