@@ -1,16 +1,18 @@
 .b-my-work {
     width: 650px;
+    float: right;
     background-color: #EFF3F7;
     border-radius: 5px;
-    margin: 34px 0px 100px 309px;
     padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .b-my-work h2{
+    margin: 0;
     font-family: 'fira_sansbook';
-    font-size:27px;
-    color:#3BA8C0;
-    padding: 15px 0px 15px 20px;
+    font-size: 27px;
+    color: #3BA8C0;
+    padding: 20px 0px 15px 20px;
     border-bottom: 2px solid #3BA8C0;
     width: 210px;
 }
@@ -24,13 +26,19 @@
     border-radius: 5px;
 }
 
+.b-project {
+    display: inline-block;
+    vertical-align: top;
+}
+
 .fon {
     width: 180px;
     height: 125px;
     background: rgba(108,183,216,.5);
-    margin-top: -128px;
+    margin-top: -129px;
     opacity: 0;
     transform: scale(0);
+    margin-bottom: 5px;
 }
 
 .portfolio .project:hover .fon {
@@ -43,54 +51,33 @@
     font-family: 'fira_sanslight_italic';
     font-size: 13px;
     color: #47ADC4;
-    position: absolute;
-    top: 285px;
-}
-
-.link-one {
-    left: 395px;
-}
-
-.link-two {
-    left: 605px;
-}
-
-.link-three {
-    left: 805px;
+    display: block;
+    text-align: center;
 }
 
 .name-project {
     font-family: 'fira_sanslight';
     font-size: 15px;
     display: block;
-    position: absolute;
-    top: 310px;
-    width: 140px
-    
+    width: 140px;
+    margin: 0 auto;
 }
 
 .project-one {
-    position: absolute;
-    left: 350px;
     text-align: center;
-    border: 1px solid #7CC3D4;
-    border-radius: 2px;
+    
 }
 
 .project-two {
-    position: absolute;
-    left: 565px;
     text-align: center;
-    border: 1px solid #7CC3D4;
-    border-radius: 2px;
 }
 
 .project-three {
-    position: absolute;
-    left: 770px;
     text-align: center;
-    border: 1px solid #7CC3D4;
-    border-radius: 2px;
+}
+
+.project-four {
+    text-align: center;
 }
 
 .site {
@@ -105,18 +92,27 @@
     transition: all 0.6s;
     z-index: 1;
     text-decoration: none;
+    display: block;
 }
 
 .site-one {
-    left: 390px;
+    left: 585px;
+    top: 310px;
 }
 
 .site-two {
-    left: 597px;
+    left: 797px;
+    top: 310px;
 }
 
 .site-three {
-    left: 797px;
+    left: 997px;
+    top: 310px;
+}
+
+.site-four {
+    left: 570px;
+    top: 540px;
 }
 
 .portfolio .project:hover .site {
@@ -127,31 +123,34 @@
 .add-project {
     width: 180px;
     height: 125px;
-    margin: 40px 0px 0px 20px;
+    display: inline-block;
+    margin: 20px 0px 80px 20px;
     background-color: #EDF8FC;
     border: 2px dashed;
     border-color: #7CC3D4;
+/*    position: relative;*/
+}
+
+.add-project:hover {
+    cursor: pointer;
 }
 
 .site-add {
     display: block;
-    padding-bottom: 125px;
+    padding-top: 18px;
     text-decoration: none;
 }
 
 .add {
-     color: #67BCCF;
+    color: #67BCCF;
     font-family: 'fira_sanslight';
     font-size: 13px;
-    position: absolute;
-    top: 430px;
-    left: 375px;
+    display: block;
+    margin: 5px 0px 0px 42px;
 }
 
 .pic-add {
-    position: absolute;
-    top: 465px;
-    left: 405px;
+    margin: 25px 0px 0 75px;
 }
 
 .popup {
@@ -271,7 +270,6 @@
     font-size: 13px;
 }
 
-
 .common-placeholder::-webkit-input-placeholder {opacity: 1; transition: opacity 0.3s ease;}
 
 .common-placeholder:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
@@ -322,7 +320,7 @@
 .add-proj{
 	display: block;
     width: 52px;
-    height: 37px;
+    height: 38px;
 	position: absolute;
     right: 13.4%;
     top: 2px;

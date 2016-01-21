@@ -14,101 +14,134 @@
 
         <script src="bower/modernizr/modernizr.js"></script>
     </head>
-<body>
-<div class="header-wrapper">
-         <div class="header clearfix">
-               <div class="logo">
-                   <a href="index.html"><img src="Images/logo.png" alt="logo"></a>
-               </div>
-               <div class="social">
-                   <a href="#" class="vk"></a>
-                   <a href="#" class="twitter"></a>
-                   <a href="#" class="facebook"></a>
-                   <a href="#" class="github"></a>
-               </div>
-            </div>
-        </div>
+    <body>
+        <!--[if lt IE 7]>
+        <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожайлуста <a href="http://browsehappy.com">обновите</a> его.</p>
+        <![endif]-->
         <div class="wrapper">
-                <div class="menu">
-                    <ul class="menu-ul">
-                         <li class="menu-item"><a class="menu-link" href="index.html">Обо мне</a>
-                        </li>
-                         <li class="menu-item active"><a class="menu-link" href="my-work.html">Мои работы</a>
-                         </li>
-                         <li class="menu-item"><a class="menu-link" href="to-contact-me.html">Связаться со мной</a></li>
-                    </ul>
-                </div>
-                 <div class="contact">
-                        <h1 class="h1">Контакты</h1>
-                        <ul class="contact_ul">
-                            <li><a class="email link" href="mailto:expected90@mail.ru"><span class="sub-liner">expected90@mail.ru</span></a>
-                         </li>
-                            <li><a class="tel link" href="tel:+380500000000"><span class="sub-liner">+380500000000</span></a></li>
-                            <li><a class="skype link" href="skype:qwerty"><span class="sub-liner">nickname</span></a></li>
-                 </ul>
-                </div>
-         <div class="b-my-work">
-             <h2>Мои работы</h2>
-             <div class="portfolio">
-                <div class="project"><a href="https://www.google.ru/" class="site site-one">google.ru</a><img src="Images/google-3.jpg" alt="google">
-                <div class="fon"></div>
-                </div>
-                <a href="https://www.google.ru/" class="link-project link-one">google.ru</a>
-                <span class="name-project project-one">Система поиска информации ...</span>
-                <div class="project"><a href="https://www.yandex.ua/" class="site site-two">yandex.ua</a><img src="Images/yandex-2.jpg" alt="yandex">
-                <div class="fon"></div>
-                </div>
-                <a href="https://www.yandex.ua/" class="link-project link-two">yandex.ua</a>
-                 <span class="name-project project-two">Поисковая система "Яндекс" ...</span>
-                <div class="project"><a href="https://www.youtube.com/" class="site site-three">youtube.com</a><img src="Images/you-tube.jpg" alt="youtube">
-                <div class="fon"></div>
-                </div>
-                <a href="https://www.youtube.com/" class="link-project link-three">youtube.com</a>
-                <span class="name-project project-three">YouTube - видеохостинг ...</span>
-                 <div class="add-project"><a href="#" class="site-add"><span class="add">Довавить проект</span><img  class="pic-add" src="Images/add-project.png" alt="new-project"></a>
-                </div> 
-             </div>
-        </div>
-    </div>
+            <div class="main-content">
+                <header class="page-header">
+                    <div class="container-big">
+                        <a class="header-logo-link">
+                            <img src="Images/logo.png" alt="logo" class="logo-img">
+                            <span class="header-logo-text">Сайт порфолио</span>
+                        </a>
+                        <ul class="socials">
+                            <li class="socials-item">
+                                <a href="#" target="_blank" class="socials-link vk">vk.com</a>
+                            </li>
+                            <li class="socials-item">
+                                <a href="#" target="_blank" class="socials-link tw">twitter.com</a>
+                            </li>
+                            <li class="socials-item">
+                                <a href="#" target="_blank" class="socials-link fb">facebook.com</a>
+                            </li>
+                            <li class="socials-item">
+                                <a href="#" target="_blank" class="socials-link gt">github.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </header>
+                <div class="container">
+                    <aside class="sidebar">
+                        <nav class="navigation">
+                            <ul class="navigation-list">
+                                <li class="navigation-item"><a href="index.html" class="navigation-link">Обо мне</a></li>
+                                <li class="navigation-item active"><a href="my-work.html" class="navigation-link">Мои работы</a></li>
+                                <li class="navigation-item"><a href="to-contact-me.html" class="navigation-link">Связаться со мной</a></li>
+                            </ul>
+                        </nav>
+                        <address class="contacts">
+                            <div class="contact">
+                                <h2 class="h2">Контакты</h2>
+                                <ul class="contact_ul">
+                                    <li><a class="email link" href="mailto:expected90@mail.ru"><span class="sub-liner">expected90@mail.ru</span></a>
+                                    </li>
+                                    <li><a class="tel link" href="tel:+380500000000"><span class="sub-liner">+380500000000</span></a></li>
+                                    <li><a class="skype link" href="skype:qwerty"><span class="sub-liner">nickname</span></a></li>
+                                </ul>
+                            </div>
+                        </address>
+                    </aside>
+                    <div class="b-my-work">
+                        <h2>Мои работы</h2>
+                        <div class="portfolio">
+                            <div class="b-project">
+                            <div class="project"><a href="https://www.google.ru/" class="site site-one">google.ru</a><img             src="Images/google-3.jpg" alt="google">
+                            <div class="fon"></div>
+                            <a href="https://www.google.ru/" class="link-project">google.ru</a>
+                            <span class="name-project project-one">Система поиска информации ...</span>
+                            </div>
+                            </div>
+                
+                            <div class="b-project">
+                            <div class="project"><a href="https://www.yandex.ua/" class="site site-two">yandex.ua</a><img src="Images/yandex-2.jpg" alt="yandex">
+                            <div class="fon"></div>
+                            <a href="https://www.yandex.ua/" class="link-project">yandex.ua</a>
+                            <span class="name-project project-two">Поисковая система "Яндекс" ...</span>
+                            </div>
+                            </div>
+                 
+                            <div class="b-project">
+                            <div class="project"><a href="https://www.youtube.com/" class="site site-three">youtube.com</a><img             src="Images/you-tube.jpg" alt="youtube">
+                            <div class="fon"></div>
+                            <a href="https://www.youtube.com/" class="link-project">youtube.com</a>
+                            <span class="name-project project-three">YouTube - видеохостинг ....</span>
+                            </div>
+                            </div>
+                 
+                            <div class="b-project">
+                            <div class="project"><a href="http://loftschool.com/" class="site site-four">loftschool.com</a><img             src="Images/loftschool.png" alt="youtube">
+                            <div class="fon"></div>
+                            <a href="http://loftschool.com/" class="link-project">loftschool.com</a>
+                            <span class="name-project project-four">Loftschool - Школа онлайн образования ...</span>
+                            </div>
+                            </div>
+                
 
-      
-      <div class="popup">
-        <h3 class="h-name">Добавления проекта</h3>
-        <div class="close-popup"></div>
-        <div class="b-liner"></div>
-           <form method="post" action="validation.php" id="add-new-project" class="form" id="valid-form">
-              <div class="error-mes server-mes"></div>
-              <div class="success-mes server-mes"></div>
-              <label><p class="form-name">Название проекта</p><input type="text" placeholder="Введите название" qtip-content="Введите название проекта" class="common-placeholder" name="name-project"></label>
-               <p class="form-name">Картинка проекта</p>
-                <div class="addproject-box">
-                    <input id="filename" class="common-placeholder filename" type="text" name="filename" placeholder="Загрузите изображение" qtip-content="Выберите картинку для проекта" disabled>
-                    <label class="add-proj">
-                      <input id="fileupload" class="fileupload" name="fileupload" type="file">
-                      <input class="fileurl" type="hidden" name="fileurl">
-                    </label>
-                  </div>
-              <label><p class="form-name">URL проекта</p><input type="text" placeholder="Добавьте ссылку" qtip-content="Напишите адрес проекта" class="common-placeholder" name="url-project"></label>
-              <label><p class="form-name">Описание</p><textarea placeholder="Пара слов о вашем проекте" qtip-content="Напишите описание проекта" class="common-placeholder area" name="description"></textarea></label>
-              <input class="button-add" type="submit" value="Добавить">
-            </form>
-      </div>
-       
-           
-            <div class="footer-wrapper">
-        <div class="footer">
-            <div class="enter"><a class="to-enter" href="entrance.html">Войти</a></div>
-            <div class="copyright"><p>&copy; 2016. Это сайт Кадильникова Ярослава Олеговича, пожалуйста, не копируйте и не воруйте его</p></div>
-        </div>
-        </div>
-        
+                            <div class="add-project"><a href="#" class="site-add"><span class="add">Довавить проект</span><img              class="pic-add" src="Images/add-project.png" alt="new-project"></a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="popup">
+                        <h3 class="h-name">Добавления проекта</h3>
+                        <div class="close-popup"></div>
+                        <div class="b-liner"></div>
+                        <form method="post" action="validation.php" id="add-new-project" class="form" id="valid-form">
+                        <div class="error-mes server-mes"></div>
+                        <div class="success-mes server-mes"></div>
+                        <label><p class="form-name">Название проекта</p><input type="text" placeholder="Введите название" qtip-content="Введите название проекта" class="common-placeholder" name="name-project"></label>
+                        <p class="form-name">Картинка проекта</p>
+                        <div class="addproject-box">
+                        <input id="filename" class="common-placeholder filename" type="text" name="filename" placeholder="Загрузите изображение" qtip-content="Выберите картинку для проекта" disabled>
+                        <label class="add-proj">
+                        <input id="fileupload" class="fileupload" name="fileupload" type="file">
+                        <input class="fileurl" type="hidden" name="fileurl">
+                        </label>
+                        </div>
+                        <label><p class="form-name">URL проекта</p><input type="text" placeholder="Добавьте ссылку" qtip-content="Напишите адрес проекта" class="common-placeholder" name="url-project"></label>
+                        <label><p class="form-name">Описание</p><textarea placeholder="Пара слов о вашем проекте" qtip-content="Напишите описание проекта" class="common-placeholder area" name="description"></textarea></label>
+                        <input class="button-add" type="submit" value="Добавить">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>   
+        <footer class="page-footer">
+            <div class="container">
+                <div class="lock">
+                    <a href="#" class="lock-inner">Войти</a>
+                </div>
+                <div class="copyright">&copy; 2016, Это сайт Кадильникова Ярослава Олеговича, пожайлуста, не копируйте и не воруйте его</div>
+            </div>
+        </footer>
         <div class="overlay"></div>
-
         <script src="bower/jquery/dist/jquery.js"></script>
         <script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
         <script src="bower/qtip2/jquery.qtip.js"></script>
         <script src="js/main.js"></script>
         <script src="js/validationjs.js"></script>
         <script src="js/addProject.js"></script>
-</body>
+    </body>
 </html>

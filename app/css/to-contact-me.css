@@ -1,13 +1,15 @@
 .b-forms {
     width: 650px;
+    float: right;
     background: #EFF3F7;
     border-radius: 10px;
     overflow: hidden;
-    margin: 37px 0px 100px 309px;
+    margin-bottom: 50px;
 }
 
 .question {
     margin: 0;
+    margin-bottom: 50px;
     width: 650px;    
     color: #FFFFFF;
     font-family: 'fira_sansbook';
@@ -15,18 +17,13 @@
     text-align: center;
     line-height: 120px;
     background: #48CBE8;
-}
-
-.liner-h1 {
     border-bottom: 15px solid #6FE4FF;
     background-color: #67DFFA;
 }
 
 .b-inside-form {
     width: 445px;
-    height: 297px;
-    margin: 50px 0 0 100px;
-    padding-top: 24px;
+    margin: 0 auto;
 }
 
 .common-input {
@@ -43,33 +40,46 @@
 }
 
 .p-name {
-    margin: -71px 0 0 0px;
+    margin: 0;
     width: 40px;
 }
 
 .p-email {
-    margin: -30px 0px 0 235px;
-    width: 50px;
+    margin: 0;
 }
 
 .p-massage {
-    margin: 50px 0 0 0px;
+    margin: 0;
     width: 102px;
 }
 
-.input-name {
-
+.b-input-name {
+    float: left;
 }
 
-.input-email {
+.b-input-email {
     float: right;
-    width: 187px;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.b-input {
+    margin-bottom: 20px;
 }
 
 .area-massage {
     resize: none;
     width: 420px;
     height: 180px;
+    margin-bottom: 20px;
 }
 
 .error {
@@ -131,7 +141,6 @@
     font-size: 13px;
 }
 
-
 .common-input::-webkit-input-placeholder {opacity: 1; transition: opacity 0.3s ease;}
 
 .common-input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
@@ -144,12 +153,24 @@
 }
 
 .recaptcha {
-    width: 303px;
-    height: 100px;
-    margin: 45px 0px 0 70px;
-    border: 2px solid rgba(172, 244, 216, 0.5);
-    background-color: rgba(172, 244, 216, 0.3);
+    width: 190px;
+    height: 80px;
+    border: 2px solid #85DCEF;
+    background-color: #FBFCFD;
     border-radius: 5px;
+    background: url(../Images/captha.png) no-repeat center;
+    display: inline-block;
+    float: left;
+}
+
+.captha-text {
+    font-size: 17px;
+    margin: 0;
+}
+
+.input-captha {
+    float: right;
+    margin-top: 20px;
 }
 
 .error-mes{

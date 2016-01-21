@@ -1,190 +1,180 @@
 html {
     height: 100%;
-    width: 100%;
 }
 
 body {
     height: 100%;
-    width: 100%;
-    font: 15px Arial, sans-serif;
-    color: #6B747C;
     background: url(../Images/background.png) repeat;
+    font: normal 1em 'fira-sanslight';
+    color: #6B747C;
 }
 
-.header-wrapper {
-    background: #EFF3F7 url(../Images/line.png) no-repeat 0% 99%;
-    padding: 15px 0 40px 0px;
-    min-width: 990px;
-}
-
-.header {
-    max-width: 1400px;
-    margin: -5px auto;
-}
-
-.clearfix:after {
-    content: "";
-    clear: both;
-    display: table;
-}
+/* Nail footer to the bottom */
 
 .wrapper {
-	width:960px;
-    margin: 0 auto;
-    
     position: relative;
-	min-height: 100%;
+    min-height: 100%;
     min-width: 970px;
-	height: auto!important;
-	overflow: hidden;
+    height: auto!important;
+/*    overflow: hidden;*/
 }
 
-.footer-wrapper{
-    background: #EFF3F7 url(../Images/line.png) no-repeat 0% 1%;
-    padding: 34px 24px 39px 0;
+.wrapper:after {
+    content: " ";
+    height: 80px;
+    display: block;
+}
+
+.page-footer {
     min-width: 970px;
-    height: 10px;
-    margin-top: 62px;
-	text-align: center;
+    height: 80px;
+    margin-top: -80px;
 }
 
-.footer {
-    width:960px;
-    margin:0 auto;
+/* Nail footer to the bottom END */
+
+/* Header */
+
+.container-big {
+    max-width: 1200px;
+    min-width: 960px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
 }
 
-.enter {
+.page-header {
+    height: 119px;
+    background: #EFF3F7 url(../Images/line.png) bottom center no-repeat;
+    position: relative;
+    margin-bottom: 39px;
+}
+
+.page-header .header-logo-link {
     position: absolute;
-    left: 338px;
-    text-decoration: none;
+    top: 39px;
+    left: 0;
 }
 
-.to-enter {
-    color: #555f67;
-    background: url(../Images/close.png) no-repeat 0% ;
-    padding: 32px 0 32px 32px;
-    text-decoration: none;
+.page-header .header-logo-text{
+    position: absolute;
+    left: -9999px;
 }
 
-.to-enter:hover {
-    text-decoration: underline;
-    background: url(../Images/open.png) no-repeat 0%;
+.page-header .socials {
+    position: absolute;
+    right: 0;
+    top: 36px;
 }
 
-.copyright{
-    width: 599px;
-    font-size: 13px;
-    font-family: 'fira_sanslight';
-    margin: -15px 0px 0px 285px;
+/* Header End */
+
+/* Socials icon */
+
+.socials {
+    margin: 0;
+    padding: 0;
+    min-width: 260px;
 }
 
-.logo {
-    margin: 16px 0 0 94px;
-    float:left;
-}
-
-.social {
-    margin: 12px 96px 0 0;
-    float: right;
-}
-
-.social a {
+.socials .socials-item {
+    list-style: none;
     display: inline-block;
-    width: 47px;
     height: 47px;
-    background: url(../Images/social.png);
-    border-radius: 50%;
+    width: 47px;
+    margin-left: 19px;
 }
 
-.social a.vk {
-   background-position: 0 0;
-    margin-right: 24px;
+.socials .socials-item:first-child {
+    margin-left: 0;
 }
 
-.social a.twitter {
-   background-position: -47px 0;
-    margin-right: 24px;
+.socials .socials-link {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-indent: -9999px;
+    background: url(../Images/social.png) no-repeat;
 }
 
-.social a.facebook {
-   background-position: -94px 0;
-    margin-right: 24px;
-}
+.socials .socials-link.vk { background-position: 0 0; }
+.socials .socials-link.tw { background-position: -47px 0; }
+.socials .socials-link.fb { background-position: -94px 0; }
+.socials .socials-link.gt { background-position: -141px 0; }
 
-.social a.github {
-   background-position: -141px 0;
-}
+.socials .socials-link:hover { background: url(../Images/social-hover.png) no-repeat; }
 
-.social a.vk:hover {
-   background: url(../Images/social2.png);
-}
+.socials .socials-link.vk:hover { background-position: 0 0; }
+.socials .socials-link.tw:hover { background-position: -47px 0; }
+.socials .socials-link.fb:hover { background-position: -94px 0; }
+.socials .socials-link.gt:hover { background-position: -141px 0; }
 
-.social a.twitter:hover {
-   background: url(../Images/tw.png);
-}
+/* Socials icon END */
 
-.social a.facebook:hover {
-   background: url(../Images/facebook.png);
-}
+/* Sidebar */
 
-.social a.github:hover {
-   background: url(../Images/gihtub.png);
-}
-
-.menu {
+.sidebar {
     width: 250px;
-    overflow: hidden;
-    background: #eff3f7;
-	border-radius: 4px;
-	margin-top: 37px;
     float: left;
 }
 
-.menu .menu-ul {
-    padding: 0;
-    margin: 0;
+/* Navigation */
+
+.navigation {
+    overflow: hidden;
+    background: #EFF3F7;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.navigation .navigation-list {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-.menu .menu-item {
-   border-top: 2px solid #3ba8c0;
-   margin: 0px 6px;
+.navigation .navigation-item {
+    border-top: 2px solid #3ba8c0;
+    margin: 0 11px;
 }
 
-.menu .menu-item:first-child {
+.navigation .navigation-item:first-child {
     border-top: none;
 }
 
-.menu .menu-item.active {
-    background-color: #3BA8C0;
+.navigation .navigation-item.active {
+    background: #3ba8c0;
     margin: 0;
+    border-bottom: none;
+    padding-left: 11px;
     margin-bottom: -2px;
-    padding-left: 6px;
 }
 
-.menu .menu-item.active .menu-link {
+.navigation .navigation-item.active .navigation-link {
+    color: #f9fafb;
     font-size: 22px;
-    color: #ffffff;
 }
 
-.menu .menu-link {
+.navigation .navigation-link {
     font-family: 'fira_sansbook';
-    font-size: 20px;
-    color: #ACB1BC;
     display: block;
+    font-size: 20px;
     text-decoration: none;
-    padding: 20px 22px;
+    color: #959aa8;
+    margin-left: 16px;
+    padding: 20px 0;
 }
 
-.menu .menu-link:hover {
-    color: #aae3f0;
+.navigation .navigation-link:hover {
+    color: #3ba8c0;
 }
 
-.contact {
+/* Navigation END */
+
+/* Contact me */
+
+.contacts {
     width: 250px;
-    margin-top: 24px;
-    float: left;
-    clear: both;
 }
 
 .contact_ul {
@@ -193,7 +183,7 @@ body {
     list-style: none;
 }
 
-.h1 {
+.h2 {
     margin: 0;
     background-color: #3ba8c0;
     color: #EEF6F9;
@@ -204,7 +194,7 @@ body {
     border-top-right-radius: 5px;
 }
 
-.contact_ul a{
+.contact_ul .link {
     color: #EEF6F9;
     display: block;
     font-family: 'fira_sansbook';
@@ -239,226 +229,251 @@ body {
     border-bottom: 1px solid #ffffff;  
 }
 
-.about_me {
+/* Contact me END */
+
+/* Variable content */
+
+.variable-content {
     width: 650px;
-    background-color: #EFF3F7;
+    float: right;
+}
+
+/* Common styles sections */
+
+.aboutbox {
+    background: #eff3f7;
     border-radius: 5px;
-    padding-bottom: 50px;
-    margin: 34px 0px 100px 309px;
+    margin-bottom: 25px;
 }
 
-.os { 
+.aboutbox .aboutbox-header {
     font-family: 'fira_sansbook';
-    font-size: 14px;
-    color: #3BA8C0;
-    padding: 15px 0px 15px 20px;
-    margin: 0;
-}
-
-.h1-info {
     font-size: 27px;
-    margin: 0;
+    font-weight: normal;
+    color: #3ba8c0;
+    border-bottom: 2px solid #3ba8c0;
+    margin: 0 0 23px 0;
+    padding: 13px 23px;
+    display: inline-block;
 }
 
-.border {
-    border-bottom: 2px solid #3BA8C0;
-    width: 341px;
+.aboutbox-body {
+    padding-bottom: 40px;
 }
 
-.pic {
-    border: 4px solid #2AA3BB;
-    border-radius: 50%;
-    width: 140px;
-    height: 140px;
+/* Common styles sections END */
+
+/* Face */
+
+.image-wrap {
+    float: left;
+    margin-left: 55px;
+    margin-top: 18px;
+}
+
+.avatar-box {
+    width: 142px;
+    height: 142px;
+    border-radius: 50% 50%;
     overflow: hidden;
-    margin: 35px 0 -177px 56px;
+    border: 5px solid #3ba8c0;
 }
 
-.me{
+.avatar {
+    width: 135%;
     position: relative;
-    left: -26px;
-    bottom: 28px;
+    right: 21px;
+    bottom: 20px;
 }
 
-.data_me {
-    
-    margin: 0px 0px 0px 230px;
-}
+/* Face END */
 
-.data_me .data_me-item {
-    line-height: 20px;
-    font-family: 'fira_sansbook';
-    font-size: 14px;
-}
+/* About me */
 
-.data_me .data_me-item .bold {
-    font-family: 'fira_sansmedium';
-    font-size: 17px;
-}
-
-.skills div {
-    font-family: 'proxima_nova_condensedSBd';
-    font-size: 14px;
+.aboutbox .worksheet-wrap {
     float: right;
-    margin: -33px 195px 85px 0px;
-    
-/*margin: -33px 195px 85px 0px;*/
+    width: 400px;
 }
 
-.skills .html {
-    color: #FFFFFF;
-    background-color: #3BA8C0;
-    background-image: linear-gradient(transparent 50%, #2E8CA2 50%);
-    padding: 2px 15px 2px 15px;
-    border-radius: 5px;
-}
-        
-.skills .css {
-    color: #FFFFFF;
-    background-color: #3BA8C0;
-    background-image: linear-gradient(transparent 50%, #2E8CA2 50%);
-    padding: 2px 15px 2px 15px;
-    border-radius: 5px;
-    margin: -33px -109px 0px 0px;
-}
-
-.skills .javascript {
-    color: #FFFFFF;
-    background-color: #3BA8C0;
-    background-image: linear-gradient(transparent 50%, #2E8CA2 50%);
-    padding: 2px 15px 2px 15px;
-    border-radius: 5px;
-    margin: -33px -199px 0px 0px;
-}
-
-.skills .gulp {
-    color: #FFFFFF;
-    background-color: #3BA8C0;
-    background-image: linear-gradient(transparent 50%, #2E8CA2 50%);
-    padding: 2px 15px 2px 15px;
-    border-radius: 5px;
-    margin: -4px -54px 0px 0px;
-}
-
-.skills .git {
-    color: #FFFFFF;
-    background-color: #3BA8C0;
-    background-image: linear-gradient(transparent 50%, #2E8CA2 50%);
-    padding: 2px 15px 2px 15px;
-    border-radius: 5px;
-    margin: -4px -107px 0px 0px;
-}
-
-.block1{
-    width: 650px;
-    background-color: #EFF3F7;
-    border-radius: 5px;
-    float: right;
-    margin: -80px 10px 0 0;
-}
-
-.block1 .h2-experience{
-    margin-top: 13;
-    font-family: 'fira_sansbook';
-    font-size: 26px;
-    color:#3BA8C0;
-    padding: 0px 0px 12px 22px;
-    border-bottom: 2px solid #3BA8C0;
-    width: 188px;
-}
-
-.block1 .p {
-    width: 650px;
-    margin: 22px 0 0 0;
-}
-
-.block1 .p1{
-    background: url(../Images/ch.png) no-repeat 58px center;
+.worksheet-list {
     list-style: none;
-}
-
-.common-str1 {
-    margin-left: 83px;
-}
-
-.block1 .p1 .string1 {
-    font-family: 'fira_sansbook';
-    font-size: 17px;
-}
-
-.block1 .p1 .string2 {
-    font-family: 'fira_sanslight';
-    font-size: 15px;
-    margin-top: -5px;
-}
-
-.block1 .p2{
-    padding-bottom: px;
-    background: url(../Images/ch.png) no-repeat 58px center;
-    list-style: none;
-}
-
-.block1 .p2 .string3 {
-    font-family: 'fira_sansbook';
-    font-size: 17px;
-}
-
-.block1 .p2 .string4 {
-    font-family: 'fira_sanslight';
-    font-size: 15px;
-    margin-top: -7px;
-}
-
-
-.block2{
-    width:650px;
-    background-color: #EFF3F7;
-    border-radius: 5px;
-    float: right;
-    margin: 20px 10px 0 0;
-}
-
-.block2 .h2-education{
+    padding: 0;
     margin: 0;
+}
+
+.worksheet-info {
+    float: left;
+    margin-left: 10px;
+    max-width: 260px;
+    
     font-family: 'fira_sansbook';
-    font-size: 26px;
-    color:#3BA8C0;
-    padding: 16px 0px 14px 23px;
-    border-bottom: 2px solid #3BA8C0;
-    width: 197px;
+    font-size: 15px;
+    overflow: hidden;
+    max-width: 228px;
 }
 
-.common-str2 {
-    margin-left: 83px;
+.worksheet-item {
+    margin-bottom: 8px;
 }
 
-.block2 .p3{
-    background: url(../Images/uc.png) no-repeat 54px center;
+.worksheet-what {
+    font-family: 'fira_sansmedium';
+    font-size: 16px;
+    float: left;
+}
+
+/* About me END */
+
+
+/* Skills */
+
+.worksheet-info .skills-list {
+    width: 224px;
+    padding: 0;
     list-style: none;
+    
+/*    max-width: 218px;*/
 }
 
-.block2 .p3 .string5 {
+.skills-list .skills-item {
+    display: inline-block;
+    font-family: 'proxima_nova_condensedSBd';
+    background: #3ba8c0;
+    
+    border-radius: 5px;
+    padding: 0 7px;
+    margin-right: 6px;
+    color: #ffffff;
+    line-height: 1.2;
+    min-width: 40px;
+    text-align: center;
+    background-image: linear-gradient(transparent 50%, #2E8CA2 50%);
+}
+
+/* Skills END */
+
+/* Experience and education */
+
+.aboutbox .aboutbox-list {
+    list-style: none;
+    padding-left: 50px;
+    margin: 0;
+}
+
+.aboutbox .aboutbox-item {
+    padding-left: 76px;
+    margin-bottom: 20px;
+}
+
+.aboutbox .aboutbox-item:last-child{
+    margin-bottom: 0;    
+}
+
+.aboutbox-item .where {
     font-family: 'fira_sansbook';
-    font-size: 17px;
+    font-size: 16px;
 }
 
-.block2 .p3 .string6 {
+.aboutbox-item .period {
     font-family: 'fira_sanslight';
     font-size: 15px;
+    line-height: 1;
 }
 
-.block2 .p4{
-    list-style: none;
-    background: url(../Images/list.png) no-repeat 62px center;
+.aboutbox-item.icon-work {
+    background: url(../Images/ch.png) 9px center no-repeat;
 }
 
-.block2 .p4 .string7 {
-    font-family: 'fira_sansbook';
-    font-size: 17px;
+.aboutbox-item.icon-college {
+    background: url(../Images/uc.png) 0px center no-repeat;
 }
 
-.block2 .p4 .string8 {
+.aboutbox-item.icon-course {
+    background: url(../Images/list.png) 9px center no-repeat;
+}
+
+/* Experience and education END */
+
+/* Footer */
+
+.page-footer {
+    background: #EFF3F7 url(../Images/line.png) top center no-repeat;
     font-family: 'fira_sanslight';
-    font-size: 15px;
-    margin-top: -5px;
+    color: #6B747C;
 }
+
+.page-footer .container {
+    padding-top: 28px;
+    position: relative;
+}
+
+.page-footer .copyright {
+    margin: 0 180px;
+    padding-top: 7px;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* Footer END*/
+
+/* Lock */
+
+.page-footer .lock {
+    position: absolute;
+    top: 26px;
+    left: 20px;
+}
+
+.lock .lock-inner {
+    display: block;
+    height: 40px;
+    font-family: 'fira-sansbook';
+    font-size: 16px;
+    line-height: 2.2;
+    color: #6B747C;
+    text-decoration: none;
+    background: url(../Images/close.png) no-repeat;
+    padding-left: 24px;
+}
+
+.lock .lock-inner:hover {
+    text-decoration: underline;
+    background: url(../Images/open.png) no-repeat;
+}
+
+/* Lock END*/
+
+/* Сommon classes */
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+/* Сommon classes END*/
+
+/* clearfix */
+
+.container:before, .clearfix:before,
+.container:after, .clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.container:after, .clearfix:after {
+    clear: both;
+}
+
+/* clearfix END*/

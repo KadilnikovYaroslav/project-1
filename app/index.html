@@ -13,93 +13,139 @@
         <script src="bower/modernizr/modernizr.js"></script>
     </head>      
     <body>
-         <div class="header-wrapper">
-         <div class="header clearfix">
-               <div class="logo">
-                   <a href="index.html"><img src="Images/logo.png" alt="logo"></a>
-               </div>
-               <div class="social">
-                   <a href="#" class="vk"></a>
-                   <a href="#" class="twitter"></a>
-                   <a href="#" class="facebook"></a>
-                   <a href="#" class="github"></a>
-               </div>
+        <!--[if lt IE 7]>
+        <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожайлуста <a href="http://browsehappy.com">обновите</a> его.</p>
+        <![endif]-->
+        <div class="wrapper">
+            <div class="main-content">
+                <header class="page-header">
+                    <div class="container-big">
+                        <a class="header-logo-link">
+                            <img src="Images/logo.png" alt="logo" class="logo-img">
+                            <span class="header-logo-text">Сайт порфолио</span>
+                        </a>
+                        <ul class="socials">
+                            <li class="socials-item">
+                                <a href="#" target="_blank" class="socials-link vk">vk.com</a>
+                            </li>
+                            <li class="socials-item">
+                                <a href="#" target="_blank" class="socials-link tw">twitter.com</a>
+                            </li>
+                            <li class="socials-item">
+                                <a href="#" target="_blank" class="socials-link fb">facebook.com</a>
+                            </li>
+                            <li class="socials-item">
+                                <a href="#" target="_blank" class="socials-link gt">github.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </header>
+                <div class="container">
+                    <aside class="sidebar">
+                        <nav class="navigation">
+                            <ul class="navigation-list">
+                                <li class="navigation-item active"><a href="index.html" class="navigation-link">Обо мне</a></li>
+                                <li class="navigation-item"><a href="my-work.html" class="navigation-link">Мои работы</a></li>
+                                <li class="navigation-item"><a href="to-contact-me.html" class="navigation-link">Связаться со мной</a></li>
+                            </ul>
+                        </nav>
+                        <address class="contacts">
+                            <h2 class="h2">Контакты</h2>
+                            <ul class="contact_ul">
+                                <li><a class="email link" href="mailto:expected90@mail.ru"><span class="sub-liner">expected90@mail.ru</span></a>
+                                    </li>
+                                <li><a class="tel link" href="tel:+380500000000"><span class="sub-liner">+380500000000</span>            </a></li>
+                                <li><a class="skype link" href="skype:qwerty"><span class="sub-liner">nickname</span></a></li>
+                            </ul>
+                        </address>
+                    </aside>
+                    <div class="variable-content">
+                        <section class="aboutbox">
+                            <h2 class="aboutbox-header">Основная информация</h2>
+                            <div class="aboutbox-body clearfix">
+                                <div class="image-wrap">
+                                    <div class="avatar-box"><img src="Images/it's%20me.jpg" alt="Кадильников Ярослав" class="avatar"></div>
+                                </div>
+                                <div class="worksheet-wrap">
+                                    <ul class="worksheet-list">
+                                        <li class="worksheet-item clearfix">
+                                            <div class="worksheet-what">Меня зовут:</div>
+                                            <div class="worksheet-info">Кадильников Ярослав Олегович</div>
+                                        </li>
+                                        <li class="worksheet-item clearfix">
+                                            <div class="worksheet-what">Мой возраст:</div>
+                                            <div class="worksheet-info">25 лет</div>
+                                        </li>
+                                        <li class="worksheet-item clearfix">
+                                            <div class="worksheet-what">Мой город:</div>
+                                            <div class="worksheet-info">Киев</div>
+                                        </li>
+                                        <li class="worksheet-item clearfix">
+                                            <div class="worksheet-what">Моя специализация:</div>
+                                            <div class="worksheet-info">FRONTEND разработчик</div>
+                                        </li>
+                                        <div class="worksheet-item clearfix">
+                                            <div class="worksheet-what">Ключевые навыки:</div>
+                                            <div class="worksheet-info skills">
+                                                <ul class="skills-list">
+                                                    <li class="skills-item">html</li>
+                                                    <li class="skills-item">css</li>
+                                                    <li class="skills-item">javascript</li>
+                                                    <li class="skills-item">gulp</li>
+                                                    <li class="skills-item">git</li>
+                                                    <li class="skills-item">jade</li>
+                                                    <li class="skills-item">sass</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </div>
+                            
+                            </div>
+                        
+                        </section>
+                        <section class="aboutbox">
+                            <h2 class="aboutbox-header">Опыт работы</h2>
+                            <div class="aboutbox-body">
+                                <ul class="aboutbox-list">
+                                    <li class="aboutbox-item icon-work">
+                                        <div class="where">"ИП Боровицкий" - Продавец дисков</div>
+                                        <div class="period">Сентябрь 2005 - Август 2008</div>
+                                    </li>
+                                    <li class="aboutbox-item icon-work">
+                                        <div class="where">"ООО Системы безопастности" - Системный администратор</div>
+                                        <div class="period">Июнь 2008 - Июль 2010</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section class="aboutbox">
+                            <h2 class="aboutbox-header">Опыт работы</h2>
+                            <div class="aboutbox-body">
+                                <ul class="aboutbox-list">
+                                    <li class="aboutbox-item icon-college">
+                                        <div class="where">Незаконченное высшее. СПБНИУ ИТМО</div>
+                                        <div class="period">Октябрь 2012 - по настоящее время</div>
+                                    </li>
+                                    <li class="aboutbox-item icon-course">
+                                        <div class="where">Курсы Loftschool</div>
+                                        <div class="period">Декабрь 2015 - по настоящее время</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="wrapper">
-                <div class="menu">
-                    <ul class="menu-ul">
-                         <li class="menu-item active"><a class="menu-link" href="index.html">Обо мне</a>
-                        </li>
-                         <li class="menu-item"><a class="menu-link" href="my-work.html">Мои работы</a>
-                         </li>
-                         <li class="menu-item"><a class="menu-link" href="to-contact-me.html">Связаться со мной</a></li>
-                    </ul>
+        <footer class="page-footer">
+            <div class="container">
+                <div class="lock">
+                    <a href="#" class="lock-inner">Войти</a>
                 </div>
-                 <div class="contact">
-                        <h1 class="h1">Контакты</h1>
-                        <ul class="contact_ul">
-                            <li><a class="email link" href="mailto:expected90@mail.ru"><span class="sub-liner">expected90@mail.ru</span></a>
-                         </li>
-                            <li><a class="tel link" href="tel:+380500000000"><span class="sub-liner">+380500000000</span></a></li>
-                            <li><a class="skype link" href="skype:qwerty"><span class="sub-liner">nickname</span></a></li>
-                 </ul>
-                </div>
-        <div class="about_me">
-                    <div class="os">
-                       <h2 class="h1-info">Основная информация</h2>
-                    </div>
-                    <div class="border"></div>
-                    <div class="pic">
-                        <img src="Images/a2.jpg" alt="It's me" class="me">
-                    </div>
-                    <div class="data_me">
-                        <p class="data_me-item"><strong class="bold">Меня зовут:</strong> Кадильников Ярослав Олегович </p>
-                        <p class="data_me-item"><strong class="bold">Мой возраст:</strong> 25 лет</p>
-                        <p class="data_me-item"><strong class="bold">Мой город:</strong> Киев</p>
-                        <p class="data_me-item"><strong class="bold">Моя специализация:</strong> FRONTEND разработчик </p>
-                        <p class="data_me-item"><strong class="bold">Ключевые навыки:</strong></p>
-                        
-                    <div class="skills">
-                        <div class="html">html</div>
-                        <div class="css">css</div>
-                        <div class="javascript">javascript</div>
-                        <div class="gulp">gulp</div>
-                        <div class="git">git</div>
-                    </div>
-                    </div>       
-        </div>
-         <div class="block1">
-             <h2 class="h2-experience">Опыт работы</h2>
-                <ul class="p1">
-                     <li class="string1 common-str1">"ИП Боровицкий" - Продавец дисков</li>
-                     <li class="string2 common-str1">Сентябрь 2005 - Август 2008</li>
-                </ul>     
-                <ul class="p2">
-                     <li class="string3 common-str1">"ООО Системы безопастности" - Системный администратор</li>
-                     <li class="string4 common-str1">Июнь 2008 - Июль 2010</li>
-                </ul>
-         </div>
-         <div class="block2">
-             <h2 class="h2-education">Образование</h2>
-                <ul class="p3">
-                     <li class="string5 common-str2">Незаконченное высшее. СПБГУ ИТМО</li>
-                     <li class="string6 common-str2">Октябрь 2012 - по настоящее время</li>
-                </ul>
-                <ul class="p4">    
-                     <li class="string7 common-str2">Курсы Loftschool.ru</li>
-                     <li class="string8 common-str2">Ноябрь 2014 - по настоящее время</li>
-                </ul>
-         </div>
-        </div>
-
-        <div class="footer-wrapper">
-        <div class="footer">
-            <div class="enter"><a class="to-enter" href="entrance.html">Войти</a></div>
-            <div class="copyright"><p>&copy; 2016. Это сайт Кадильникова Ярослава Олеговича, пожалуйста, не копируйте и не воруйте его</p></div>
-        </div>
-        </div>
-
+                <div class="copyright">&copy; 2016, Это сайт Кадильникова Ярослава Олеговича, пожайлуста, не копируйте и не воруйте его</div>
+            </div>
+        </footer>
 <!--        <script> src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js">         </script>-->
         <script src="bower/jquery/dist/jquery.js"></script>
         <script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
