@@ -21,7 +21,7 @@
     width: 180px;
     height: 125px;
     display: inline-block;
-    margin: 20px 0px 80px 20px;
+    margin: 20px 0px 0px 20px;
     border: 3px solid #2db9ed;
     border-radius: 5px;
 }
@@ -29,6 +29,11 @@
 .b-project {
     display: inline-block;
     vertical-align: top;
+}
+
+.google-description {
+    margin: 0;
+    padding: 0;
 }
 
 .fon {
@@ -44,6 +49,10 @@
 .portfolio .project:hover .fon {
     opacity: 1;
     transform: scale(1);
+}
+
+.description {
+    margin-left: 20px;
 }
 
 .link-project {
@@ -112,7 +121,7 @@
 
 .site-four {
     left: 570px;
-    top: 540px;
+    top: 530px;
 }
 
 .portfolio .project:hover .site {
